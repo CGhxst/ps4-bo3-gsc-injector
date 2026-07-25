@@ -1,9 +1,11 @@
-# PS4 BO3 GSC Compiler + Injector
-This is an open source Black Ops 3 GSC Compiler and Injector for PS4 for the latest 1.33 Update.
-It uses a stripped down version of [shiversoftdev/t7-compiler](https://github.com/shiversoftdev/t7-compiler) with all the platform/game/gamemode stuff removed and the opcode database updated.
+# cghxst BO3 GSC Compiler & Injector
+Black Ops 3 PS4 GSC Compiler and Injector for game updates 1.26 and 1.33.
 
-##### Credits:
-shiversoftdev: Compiler / How injection works
+The bundled [GoldHEN ps4debug v1.1.19](https://github.com/GoldHEN/ps4debug/releases/tag/v1.1.19) payload supports the listed firmwares spanning 5.05-12.02; see the upstream release for the exact list.
+
+##### Author & Credits:
+- **cghxst**: 9.00 firmware payload integration, UI modernizations, release optimization.
+- **shiversoftdev**: Core compiler base engine & injection concept.
 
 ## How To Compile
  - Get the source code to the menu of your choice.
@@ -19,6 +21,3 @@ shiversoftdev: Compiler / How injection works
  - Hit the "Attach BO3" button.
  - In the Injector section of the tool, select the browse button for the Compiled GSC File and select your compiled GSC file
  - Hit the "Inject GSC" button and start your game!
-
-# Executable
-Find a precompiled executable on the releases tab or on the [RedDotCity Website](https://community.reddotcity.com/threads/ps4-black-ops-3-latest-update-1-33-gsc-compiler-and-injector.84/)
