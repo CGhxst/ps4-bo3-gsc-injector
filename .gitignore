@@ -40,6 +40,7 @@ Generated\ Files/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+verify-build/
 
 # NUNIT
 *.VisualState.xml

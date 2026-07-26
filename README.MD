@@ -1,23 +1,30 @@
-# cghxst BO3 GSC Compiler & Injector
-Black Ops 3 PS4 GSC Compiler and Injector for game updates 1.26 and 1.33.
+# PS4 GSC Injector
 
-The bundled [GoldHEN ps4debug v1.1.19](https://github.com/GoldHEN/ps4debug/releases/tag/v1.1.19) payload supports the listed firmwares spanning 5.05-12.02; see the upstream release for the exact list.
+Compile and inject GSC scripts for BO3 and BO4 on PS4.
 
-##### Author & Credits:
-- **cghxst**: 9.00 firmware payload integration, UI modernizations, release optimization.
-- **shiversoftdev**: Core compiler base engine & injection concept.
+## Supported targets
 
-## How To Compile
- - Get the source code to the menu of your choice.
- - In the compiler section, select the "Browse" button for the GSC Project and select the root folder of your gsc menu source code
- - For the Output Path, hit the "Browse" button and pick any directory and give the file any name you would like (this is where it will store the compiled gsc file that can be injected)
- - Hit the "Compile GSC Project" button.
+- Black Ops 3 1.26 and 1.33: compile and inject T7 PS4 `.gscc` scripts.
+- Black Ops 4 1.26: compile T8 projects and inject `.gscc` scripts through automatic Zombies, Multiplayer, and Frontend/Common hooks.
 
-## How To Inject
- - Launch the tool and select your game version and console version.
- - Once you have enabled your jailbreak of choice, launch the bin loader.
- - While the bin loader is opened, input your PS4 IP Address and Port and hit "Connect PS4", this will send the payload.
- - Once the payload has been loaded, launch black ops 3 and get into a zombies pre-game lobby.
- - Hit the "Attach BO3" button.
- - In the Injector section of the tool, select the browse button for the Compiled GSC File and select your compiled GSC file
- - Hit the "Inject GSC" button and start your game!
+The bundled GoldHEN ps4debug v1.1.19 payload supports PS4 system software 5.05, 6.72, 7.02, 7.50, 7.51, 7.55, 9.00, 9.03, 9.04, 9.50, 9.51, 9.60, 10.00, 10.01, 10.50, 10.70, 10.71, 11.00, 12.00, 12.01, and 12.02.
+
+## Compile
+
+1. Select the game and its version or mode.
+2. Select the root folder of the GSC project.
+3. Choose the output path for the compiled `.gscc` file.
+4. Select **Compile Project**.
+
+## Inject
+
+1. Enable the PS4 jailbreak and open its bin loader.
+2. Enter the PS4 IP address and payload port, then select **Send Payload**.
+3. Start the selected game. For Black Ops 4, load the mode selected in the app.
+4. Select **Attach BO3** or **Attach BO4**.
+5. Choose the matching compiled `.gscc` file and select **Inject Script**.
+
+## Credits
+
+- cghxst: firmware payload integration, UI work, and release packaging.
+- shiversoftdev and ate47: T7 and T8 compiler foundations, research, and injection concepts.
