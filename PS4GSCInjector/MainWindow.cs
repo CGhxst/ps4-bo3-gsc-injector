@@ -9,7 +9,6 @@ using libdebug;
 using Microsoft.Win32;
 using PS4GSCInjector.GameProfiles;
 using TreyarchCompiler.Utilities;
-using Forms = System.Windows.Forms;
 using Ps4Process = libdebug.Process;
 
 namespace PS4GSCInjector
@@ -320,12 +319,10 @@ namespace PS4GSCInjector
 
         private void BrowseGscFolderButton_Click(object sender, RoutedEventArgs e)
         {
-            using (var dialog = new Forms.FolderBrowserDialog())
+            string selectedPath = FolderPicker.Show(this);
+            if (!string.IsNullOrWhiteSpace(selectedPath))
             {
-                if (dialog.ShowDialog() == Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(dialog.SelectedPath))
-                {
-                    GscProjectFolderTextBox.Text = dialog.SelectedPath;
-                }
+                GscProjectFolderTextBox.Text = selectedPath;
             }
         }
 

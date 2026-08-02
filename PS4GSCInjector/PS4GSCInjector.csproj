@@ -87,7 +87,6 @@
       <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
